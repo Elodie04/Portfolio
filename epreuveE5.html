@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Élodie Lefevre - Administratrice Réseau</title>
+    <title>ï¿½lodie Lefevre - Administratrice Rï¿½seau</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
@@ -35,7 +35,6 @@
 
         <div data-include="menu"></div>
 
-
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -48,3 +47,13 @@
                 <object type="application/pdf" data="./Fichier/FicheDescriptive.pdf#toolbar=0&scrollbar=0" height="1100px"
                         width="800px"></object>
             </div>
+
+            <script>
+                $(function () {
+                    var includes = $('[data-include]')
+                    $.each(includes, function () {
+                        var file = $(this).data('include') + '.html'
+                        $(this).load(file)
+                    })
+                })
+            </script>
