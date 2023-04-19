@@ -35,43 +35,49 @@
 
         <div data-include="menu"></div>
 
+
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+              <div class="col-md-12">
+      
+              </div>
+              </div>
+              <br>
+      
+              <div class="pdfE4">
+                <object type="application/pdf" data="./Fichier/FicheDescriptive1.pdf#toolbar=0&scrollbar=0"
+                    height="1100px" width="800px"></object>
+            </div>
 
-                </div>
+            <div class="pdfE4">
+                <object type="application/pdf" data="./Fichier/FicheDescriptive2.pdf#toolbar=0&scrollbar=0"
+                    height="1100px" width="800px"></object>
+            </div>
+      
             </div>
             <br>
+            <br>
 
-            <div class="pdfE4">
-                <object type="application/pdf" data="./Fichier/FicheDescriptive1.pdf#toolbar=0&scrollbar=0" height="1100px"
-                        width="800px"></object>
-            </div>
 
-            <div class="pdfE4">
-                <object type="application/pdf" data="./Fichier/FicheDescriptive2.pdf#toolbar=0&scrollbar=0" height="1100px"
-                        width="800px"></object>
-            </div>
+         <div data-include="footer"></div>
 
-            <div data-include="footer"></div>
+        <!--jquary min js-->
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.js"></script>
 
-            <!--jquary min js-->
-            <script type="text/javascript" src="./js/jquery.min.js"></script>
-            <script src="./js/bootstrap.js"></script>
+        <link type="text/css" rel="stylesheet" id="theme" href="./css/jquery-ui-1.8.16.custom.css">
+        <link type="text/css" rel="stylesheet" href="./css/lightbox.min.css">
 
-            <link type="text/css" rel="stylesheet" id="theme" href="./css/jquery-ui-1.8.16.custom.css">
-            <link type="text/css" rel="stylesheet" href="./css/lightbox.min.css">
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
 
-            <script type="text/javascript" src="./js/jquery.min.js"></script>
-
-            <script>
-                $(function () {
-                    var includes = $('[data-include]')
-                    $.each(includes, function () {
-                        var file = $(this).data('include') + '.html'
-                        $(this).load(file)
-                    })
+        <script>
+            $(function () {
+                var includes = $('[data-include]')
+                $.each(includes, function () {
+                    var file = $(this).data('include') + '.html'
+                    $(this).load(file)
                 })
-            </script>
+            })
+        </script>
 
 </body>
